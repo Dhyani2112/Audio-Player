@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Audio Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🎧 Audio Player</h1>
+
+    <canvas id="visualizer"></canvas>
+
+    <input type="file" id="fileInput" accept="audio/*" multiple>
+
+    <ul id="playlist"></ul>
+
+    <audio id="audio"></audio>
+
+    <div class="controls">
+
+        <button id="back5">
+            <img src="/images/icons8-previous-64.png" alt="5 sec back">
+        </button>
+
+        <button id="prevBtn">
+            <img src="/images/icons8-back-64.png" alt="Previous song">
+        </button>
+
+        <button id="playBtn">
+            <img src="/images/icons8-play-64.png" alt="Play">
+        </button>
+
+        <button id="pauseBtn" style="display:none;">
+            <img src="/images/icons8-pause-64.png" alt="Pause">
+        </button>
+
+        <button id="forward5">
+            <img src="/images/icons8-forward-64.png" alt="5 sec forward">
+        </button>
+
+        <button id="nextBtn">
+            <img src="/images/icons8-fast-forward-64.png" alt="Next song">
+        </button>
+
+    </div>
+
+    <input type="range" id="seekBar" value="0">
+
+    <div class="time">
+        <span id="currentTime">0:00</span> /
+        <span id="duration">0:00</span>
+    </div>
+
+    <div class="volume-box">
+        <label>Volume</label>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.001" value="1">
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

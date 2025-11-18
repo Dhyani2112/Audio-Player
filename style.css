@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #111, #222, #5500ff);
+    color: white;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+
+#visualizer {
+    width: 100%;
+    height: 200px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+#playlist li {
+    padding: 12px;
+    margin: 6px 0;
+    background: rgba(255,255,255,0.1);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playlist li:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+#playlist li.active {
+    background: #5500ff;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.controls button {
+    background: transparent;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.controls button img {
+    width: 55px;
+    height: 55px;
+    transition: 0.2s;
+    filter: drop-shadow(0 0 5px rgba(150, 0, 255, 0.5));
+}
+
+.controls button img:hover {
+    transform: scale(1.15);
+    filter: drop-shadow(0 0 12px rgba(180, 80, 255, 0.9));
+}
+
+#seekBar {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.time {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.volume-box {
+    margin-top: 10px;
+}
+
+#volumeSlider {
+    width: 200px;
+}
